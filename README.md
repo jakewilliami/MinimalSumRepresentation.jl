@@ -1,4 +1,4 @@
-# MinimalSumRepresentation
+<h1 align="center">MinimalSumRepresentation.jl</h1>
 
 [![Build Status](https://github.com/jakewilliami/MinimalSumRepresentation.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/jakewilliami/MinimalSumRepresentation.jl/actions/workflows/CI.yml?query=branch%3Amaster)
 
@@ -11,3 +11,15 @@ The inspiration for this was [The Password Game](https://neal.fun/password-game/
 We will start with [a naïve solution](https://github.com/jakewilliami/MinimalSumRepresentations.jl/releases/tag/v1.0.0) and build up from there.
 
 This has [BestApproximation.jl](https://github.com/jakewilliami/BestApproximation.jl/) energy&mdash;interesting for a fleeting moment, but quite useless.
+
+## Quick Start
+
+```julia
+julia> using MinimalSumRepresentation
+
+julia> solve(25)
+3-element Vector{Int64}:
+ 7
+ 9
+ 9
+```
