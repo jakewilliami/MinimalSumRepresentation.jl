@@ -8,7 +8,7 @@ $$n = x_1 + x_2 + \ldots + x_i \quad \text{where} \quad x_j < 10, \quad \forall 
 
 The inspiration for this was [The Password Game](https://neal.fun/password-game/); specifically, the instruction &ldquo;the digits in your password must add up to $[n]$.&rdquo;  After seeing this instruction, I was curious to know how you can write it minimally.
 
-We will start with [a naïve solution](https://github.com/jakewilliami/MinimalSumRepresentations.jl/releases/tag/v1.0.0) and build up from there.
+We will start with [a naïve solution](https://github.com/jakewilliami/MinimalSumRepresentation.jl/releases/tag/v1.0.0) and build up from there.
 
 This has [BestApproximation.jl](https://github.com/jakewilliami/BestApproximation.jl/) energy&mdash;interesting for a fleeting moment, but quite useless.
 
