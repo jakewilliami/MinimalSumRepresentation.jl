@@ -3,6 +3,7 @@ module MinimalSumRepresentation
 export solve
 
 using Combinatorics: with_replacement_combinations
+using Multisets: Multiset
 
 function summation_options(target_digits::Int)
     # We could do something like:
@@ -35,7 +36,7 @@ function solve(target::Int)
     #
     #     function solve_mod(target::Int)
     #         d, r = divrem(target, 9)
-    #         return Int[(9 for _ in 1:d)..., r]
+    #         return Multiset((9 for _ in 1:d)..., r)
     #     end
     #
     # But this is uninteresting, and renders the whole repo
@@ -43,7 +44,7 @@ function solve(target::Int)
     n = 1
     while true
         for opt in summation_options(n)
-            sum(opt) == target && return opt
+            sum(opt) == target && return Multiset(opt)
         end
         n += 1
     end

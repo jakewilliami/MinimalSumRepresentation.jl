@@ -1,13 +1,15 @@
 name = "MinimalSumRepresentation"
 uuid = "0eccfe49-13e2-467e-ac34-f39153180da4"
 authors = ["Jake Ireland <jakewilliami@icloud.com> and contributors"]
-version = "1.0.0"
+version = "1.1.0"
 
 [deps]
 Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
+Multisets = "3b2b4ff1-bcff-5658-a3ee-dbcf1ce5ac09"
 
 [compat]
 Combinatorics = "1.0.2"
+Multisets = "0.4.5"
 julia = "1.6.7"
 
 [extras]
