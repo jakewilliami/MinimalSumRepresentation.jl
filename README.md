@@ -14,7 +14,7 @@ This has [BestApproximation.jl](https://github.com/jakewilliami/BestApproximatio
 
 ## Quick Start
 
-```julia
+```julia-repl
 julia> using MinimalSumRepresentation
 
 julia> solve(25)
